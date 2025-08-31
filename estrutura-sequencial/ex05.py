@@ -1,5 +1,6 @@
-'''Faça um programa que converta metros para centímetros:
-'''
+"""Faça um programa que converta metros para centímetros:
+"""
+
 metro = int(input("Digite o valor em metros parar converter em cm:"))
 conversao = metro * 100
 
