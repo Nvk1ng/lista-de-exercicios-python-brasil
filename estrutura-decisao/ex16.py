@@ -1,5 +1,4 @@
-"""
-Programa para calcular as raízes de uma equação do segundo grau na forma ax² + bx + c = 0
+"""Programa para calcular as raízes de uma equação do segundo grau na forma ax² + bx + c = 0
 
 O programa faz as seguintes verificações:
 - Se a = 0, não é equação do segundo grau

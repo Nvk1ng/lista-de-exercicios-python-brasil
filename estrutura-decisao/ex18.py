@@ -1,8 +1,4 @@
-"""
-Exercício 18 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+"""Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
     >>> validar_data('')
     'Data inválida'

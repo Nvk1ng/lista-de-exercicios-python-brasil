@@ -1,8 +1,4 @@
-"""
-Exercício 26 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+"""posto está vendendo combustíveis com a seguinte tabela de descontos:
 
     Álcool:
     até 20 litros, desconto de 3% por litro

@@ -1,8 +1,4 @@
-"""
-Exercício 17 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não
+"""Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não
 bissexto.
     >>> eh_ano_bissexto(400)
     True

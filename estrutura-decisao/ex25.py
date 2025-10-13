@@ -1,8 +1,4 @@
-"""
-Exercício 25 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+"""Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
 
   "Telefonou para a vítima?"
   "Esteve no local do crime?"

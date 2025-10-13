@@ -1,8 +1,4 @@
-"""
-Exercício 28 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+"""O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
 
                       Até 5 Kg           Acima de 5 Kg
 File Duplo      R$ 4,90 por Kg          R$ 5,80 por Kg

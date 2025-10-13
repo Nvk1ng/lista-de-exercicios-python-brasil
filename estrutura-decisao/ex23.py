@@ -1,8 +1,4 @@
-"""
-Exercício 23 da seção de estrutura de decisão da Python Brasil:
-https://wiki.python.org.br/EstruturaDeDecisao
-
-Faça um Programa que peça um número e informe se o número é inteiro ou decimal. Dica: utilize uma função de
+"""Faça um Programa que peça um número e informe se o número é inteiro ou decimal. Dica: utilize uma função de
 arredondamento.
 
     >>> decidir_se_eh_inteiro_ou_decimal('256')
