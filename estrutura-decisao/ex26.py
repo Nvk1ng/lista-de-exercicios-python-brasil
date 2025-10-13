@@ -29,5 +29,27 @@ Mostre o restultado com duas casas decimais
     '20 litro(s) de gasolina custa(m): R$ 50.00. Com 4% de desconto, fica R$ 48.00'
     >>> calcular_abastecimento(30, 'G')
     '30 litro(s) de gasolina custa(m): R$ 75.00. Com 6% de desconto, fica R$ 70.50'
-
 """
+
+litros = float(input("Digite o número de litros: "))
+tipo = input("Digite o tipo de combustível (A-álcool, G-gasolina): ")
+
+if tipo.upper() == 'A':
+    preco_litro = 1.90
+    combustivel = "álcool"
+    if litros <= 20:
+        desconto = 3
+    else:
+        desconto = 5
+else:
+    preco_litro = 2.50
+    combustivel = "gasolina"
+    if litros <= 20:
+        desconto = 4
+    else:
+        desconto = 6
+
+valor_total = litros * preco_litro
+valor_com_desconto = valor_total * (1 - desconto / 100)
+
+print(f"{int(litros)} litro(s) de {combustivel} custa(m): R$ {valor_total:.2f}. Com {desconto}% de desconto, fica R$ {valor_com_desconto:.2f}")

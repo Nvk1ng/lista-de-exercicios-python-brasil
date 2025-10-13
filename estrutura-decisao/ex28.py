@@ -40,10 +40,32 @@ Mostre o restultado com duas casas decimais
     >>> calcular_preco_da_carne('Picanha', 6, 'dinheiro')
     '6 kg de Picanha a R$ 7.80/kg saem a R$ 46.80. Não há desconto, pagamento feito com dinheiro'
     >>> calcular_preco_da_carne('Picanha', 8, 'cartão tabajara')
-    '8 kg de Picanha a R$ 7.80/kg saem a R$ 62.40. Com desconto de 5% pelo pagamento feito com cartão tabajara, fica R$ 59.28'
-    
+    '8 kg de Picanha a R$ 7.80/kg saem a R$ 62.40. Com desconto de 5% pelo pagamento feito com cartão tabajara, fica R$ 59.28' 
 """
+tipo = input("Digite o tipo de carne (Filé Duplo, Alcatra, Picanha): ")
+quantidade = float(input("Digite a quantidade (em Kg): "))
+pagamento = input("Digite a forma de pagamento: ")
 
+if tipo == 'Filé Duplo':
+    if quantidade <= 5:
+        preco_kg = 4.90
+    else:
+        preco_kg = 5.80
+elif tipo == 'Alcatra':
+    if quantidade <= 5:
+        preco_kg = 5.90
+    else:
+        preco_kg = 6.80
+elif tipo == 'Picanha':
+    if quantidade <= 5:
+        preco_kg = 6.90
+    else:
+        preco_kg = 7.80
 
-def calcular_preco_da_carne(tipo_de_carne: str, kilos_de_carne: int, forma_de_pagamento: str) -> str:
-    """Escreva aqui em baixo a sua solução"""
+valor_total = quantidade * preco_kg
+
+if pagamento.lower() == 'cartão tabajara':
+    valor_final = valor_total * 0.95
+    print(f"{int(quantidade)} kg de {tipo} a R$ {preco_kg:.2f}/kg saem a R$ {valor_total:.2f}. Com desconto de 5% pelo pagamento feito com {pagamento}, fica R$ {valor_final:.2f}")
+else:
+    print(f"{int(quantidade)} kg de {tipo} a R$ {preco_kg:.2f}/kg saem a R$ {valor_total:.2f}. Não há desconto, pagamento feito com {pagamento}")

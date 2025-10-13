@@ -53,5 +53,38 @@ Mostre o restultado com duas casas decimais
     (+)  Maça     - valor:  R$ 10.50 - quantidade:  7 kg - preço: R$ 1.50/kg
     (-)  Desconto - valor:  R$  2.59
               Valor Total:  R$ 23.31
-
 """
+morangos = float(input("Digite a quantidade de morangos (em Kg): "))
+macas = float(input("Digite a quantidade de maçãs (em Kg): "))
+
+if morangos <= 5:
+    preco_morango = 2.50
+else:
+    preco_morango = 2.20
+
+if macas <= 5:
+    preco_maca = 1.80
+else:
+    preco_maca = 1.50
+
+valor_morangos = morangos * preco_morango
+valor_macas = macas * preco_maca
+valor_total = valor_morangos + valor_macas
+
+kg_total = morangos + macas
+
+if kg_total > 8 or valor_total > 25:
+    desconto = valor_total * 0.10
+else:
+    desconto = 0.00
+
+valor_final = valor_total - desconto
+
+if morangos > 0:
+    print(f"(+)  Morango  - valor:  R$ {valor_morangos:5.2f} - quantidade: {int(morangos):2d} kg - preço: R$ {preco_morango:.2f}/kg")
+
+if macas > 0:
+    print(f"(+)  Maça     - valor:  R$ {valor_macas:5.2f} - quantidade: {int(macas):2d} kg - preço: R$ {preco_maca:.2f}/kg")
+
+print(f"(-)  Desconto - valor:  R$ {desconto:5.2f}")
+print(f"          Valor Total:  R$ {valor_final:5.2f}")
