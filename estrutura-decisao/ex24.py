@@ -27,3 +27,40 @@ Mostre o restultado com duas casas decimais
     Número é positivo e decimal.
 
 """
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operacao = input("Digite a operação (+, -, *, /): ")
+
+if operacao == '+':
+    resultado = num1 + num2
+elif operacao == '-':
+    resultado = num1 - num2
+elif operacao == '*':
+    resultado = num1 * num2
+elif operacao == '/':
+    resultado = num1 / num2
+
+print(f"Resultado: {resultado:.2f}")
+
+classificacao = []
+
+if resultado == int(resultado):
+    if int(resultado) % 2 == 0:
+        classificacao.append("par")
+    else:
+        classificacao.append("impar")
+
+if resultado > 0:
+    classificacao.append("positivo")
+elif resultado < 0:
+    classificacao.append("negativo")
+else:
+    classificacao.append("neutro")
+
+if resultado == int(resultado):
+    classificacao.append("inteiro")
+else:
+    classificacao.append("decimal")
+
+print("Número é " + ", ".join(classificacao) + ".")

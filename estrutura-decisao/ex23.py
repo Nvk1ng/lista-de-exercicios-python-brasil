@@ -18,3 +18,11 @@ arredondamento.
     >>> decidir_se_eh_inteiro_ou_decimal('3.1415')
     'Decimal'
 """
+numero = input("Digite um número: ")
+
+num = float(numero)
+
+if num == int(num):
+    print("Inteiro")
+else:
+    print("Decimal")
