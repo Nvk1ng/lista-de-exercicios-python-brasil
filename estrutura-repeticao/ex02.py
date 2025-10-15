@@ -12,3 +12,13 @@ mensagem de erro e voltando a pedir as informações.
     Senha deve ser diferente do login
     'Cadastro realizado com suceso, seu login é outro_login'
 """
+
+while True:
+    login = input("Digite o nome de usuário: ")
+    senha = input("Digite a senha: ")
+    
+    if senha == login:
+        print("Senha deve ser diferente do login")
+    else:
+        print(f"Cadastro realizado com suceso, seu login é {login}")
+        break
