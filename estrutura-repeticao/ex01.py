@@ -24,3 +24,16 @@ até que o usuário informe um valor válido.
     Número inválido: a
     10
 """
+
+while True:
+    nota = input("Digite uma nota entre 0 e 10: ")
+    
+    try:
+        nota_float = float(nota)
+        if 0 <= nota_float <= 10:
+            print(int(nota_float))
+            break
+        else:
+            print(f"Número inválido: {nota}")
+    except:
+        print(f"Número inválido: {nota}")
